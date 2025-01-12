@@ -22,23 +22,20 @@
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-
-
-    <style>
-      img
-      {
-        width : 100%
-      }
-    </style>
   </head>
 
   <body>
 
     <header id="header">
       <img
-      src="waving_cropped.jpeg"
+      srcset="/images/waving_small.jpeg 250w,
+              /images/waving_medium.jpeg 325w,
+              /images/waving_large.jpeg 650w"
+      sizes="(max-width: 710px) 250px,
+             (max-width: 991px) 325px,
+             650px"
+      src="/images/waving_medium.jpeg"
       alt="a picture of me"
-      style="width:325px;height:325px;"
       />
       <h1>Arthur Young</h1>
 
